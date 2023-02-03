@@ -26,7 +26,8 @@ public class University {
 
     private String universityAddress;
 
-    @OneToMany(mappedBy = "university", cascade = CascadeType.ALL)
+//    @OneToMany(mappedBy = "university", cascade = CascadeType.ALL)
+    @OneToMany
 //    @JoinColumn(name = "college_id")
     private List<College> collegeList;
 }
